@@ -24,6 +24,9 @@ public class Fecha {
 			return true;
 	}
 
+	/**
+	 * @return
+	 */
 	private int diasMes() {
 		int diasMes = 0;
 		switch (mes) {
