@@ -18,6 +18,13 @@ public class Fecha {
 			return false;
 		if (anio < 0)
 			return false;
+		if (dia > diasMes())
+			return false;
+		else
+			return true;
+	}
+
+	private int diasMes() {
 		int diasMes = 0;
 		switch (mes) {
 		case 1:
@@ -41,10 +48,8 @@ public class Fecha {
 			else
 				diasMes = 28;
 			break;
+
 		}
-		if (dia > diasMes)
-			return false;
-		else
-			return true;
+		return diasMes;
 	}
 }
